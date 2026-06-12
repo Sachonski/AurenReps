@@ -1,1 +1,9 @@
-{ "functions": { "api/a-team.js": { "maxDuration": 30 } } }
+{
+  "functions": {
+    "api/a-team.js": { "maxDuration": 30 }
+  },
+  "rewrites": [
+    { "source": "/api/a-team", "destination": "/api/a-team.js" },
+    { "source": "/", "destination": "/index.html" }
+  ]
+}
